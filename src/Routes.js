@@ -18,14 +18,6 @@ import {
 
 // Example Pages
 
-import WidgetsCountup from "./example-pages/WidgetsCountup";
-import FormsControls from "./example-pages/FormsControls";
-import FormsDualListbox from "./example-pages/FormsDualListbox";
-import FormsToggleSwitch from "./example-pages/FormsToggleSwitch";
-import PageError404 from "./example-pages/PageError404";
-import PageError500 from "./example-pages/PageError500";
-import PageError505 from "./example-pages/PageError505";
-
 const Overview = lazy(() => import("./example-pages/Overview"));
 const DashboardMonitoring = lazy(() =>
   import("./example-pages/DashboardMonitoring")
@@ -286,6 +278,84 @@ const Routes = () => {
                 "/DashboardCommerce",
                 "/DashboardAnalytics",
                 "/DashboardStatistics",
+                "/ElementsAvatars",
+                "/ElementsBadges",
+                "/ElementsButtons",
+                "/ElementsDropdowns",
+                "/ElementsIcons",
+                "/ElementsNavigationMenus",
+                "/ElementsPagination",
+                "/ElementsProgressBars",
+                "/ElementsRatings",
+                "/ElementsRibbons",
+                "/ElementsScrollable",
+                "/ElementsSearchBars",
+                "/ElementsTimelines",
+                "/ElementsUtilitiesHelpers",
+                "/BlocksChartsLarge",
+                "/BlocksChartsSmall",
+                "/BlocksComposed",
+                "/BlocksContentText",
+                "/BlocksGrids",
+                "/BlocksIcons",
+                "/BlocksImages",
+                "/BlocksListsLarge",
+                "/BlocksListsSmall",
+                "/BlocksNavigation",
+                "/BlocksProfilesSmall",
+                "/BlocksProgressCircular",
+                "/BlocksProgressHorizontal",
+                "/BlocksSparklinesLarge",
+                "/BlocksSparklinesSmall",
+                "/BlocksStatistics",
+                "/MarketingCta",
+                "/MarketingFeatureSections",
+                "/MarketingFooters",
+                "/MarketingHeaders",
+                "/MarketingHero",
+                "/MarketingIcons",
+                "/MarketingPartners",
+                "/MarketingPricingTables",
+                "/MarketingTestimonials",
+                "/WidgetsAccordions",
+                "/WidgetsCalendars",
+                "/WidgetsCarousels",
+                "/WidgetsContextMenus",
+                "/WidgetsCountup",
+                "/WidgetsDragDrop",
+                "/WidgetsGuidedTours",
+                "/WidgetsImageCrop",
+                "/WidgetsLoadingIndicators",
+                "/WidgetsModals",
+                "/WidgetsNotifications",
+                "/WidgetsPopovers",
+                "/WidgetsTabs",
+                "/WidgetsTooltips",
+                "/WidgetsTreeView",
+                "/ChartsApex",
+                "/ChartsGauges",
+                "/Chartjs",
+                "/ChartsSparklines",
+                "/Tables",
+                "/Maps",
+                "/FormsControls",
+                "/FormsClipboard",
+                "/FormsColorpicker",
+                "/FormsDatepicker",
+                "/FormsDualListbox",
+                "/FormsInputMask",
+                "/FormsInputSelect",
+                "/FormsSlider",
+                "/FormsSteppers",
+                "/FormsTextareaAutosize",
+                "/FormsTimepicker",
+                "/FormsToggleSwitch",
+                "/FormsTypeahead",
+                "/FormsUpload",
+                "/FormsValidation",
+                "/FormsWysiwygEditor",
+                "/PageAuthModals",
+                "/PageInvoice",
               ]}
             >
               <LeftSidebar>
@@ -458,7 +528,6 @@ const Routes = () => {
                       path="/WidgetsContextMenus"
                       component={WidgetsContextMenus}
                     />
-                    <Route path="/WidgetsCountup" component={WidgetsCountup} />
                     <Route
                       path="/WidgetsDragDrop"
                       component={WidgetsDragDrop}
@@ -502,7 +571,6 @@ const Routes = () => {
                     />
                     <Route path="/Tables" component={Tables} />
                     <Route path="/Maps" component={Maps} />
-                    <Route path="/FormsControls" component={FormsControls} />
                     <Route path="/FormsClipboard" component={FormsClipboard} />
                     <Route
                       path="/FormsColorpicker"
@@ -511,10 +579,6 @@ const Routes = () => {
                     <Route
                       path="/FormsDatepicker"
                       component={FormsDatepicker}
-                    />
-                    <Route
-                      path="/FormsDualListbox"
-                      component={FormsDualListbox}
                     />
                     <Route path="/FormsInputMask" component={FormsInputMask} />
                     <Route
@@ -531,10 +595,7 @@ const Routes = () => {
                       path="/FormsTimepicker"
                       component={FormsTimepicker}
                     />
-                    <Route
-                      path="/FormsToggleSwitch"
-                      component={FormsToggleSwitch}
-                    />
+
                     <Route path="/FormsTypeahead" component={FormsTypeahead} />
                     <Route path="/FormsUpload" component={FormsUpload} />
                     <Route
@@ -653,9 +714,6 @@ const Routes = () => {
                       path="/PageRecoverOverlay"
                       component={PageRecoverOverlay}
                     />
-                    <Route path="/PageError404" component={PageError404} />
-                    <Route path="/PageError500" component={PageError500} />
-                    <Route path="/PageError505" component={PageError505} />
                   </motion.div>
                 </Switch>
               </MinimalLayout>
